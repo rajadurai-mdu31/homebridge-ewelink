@@ -335,7 +335,7 @@ eWeLink.prototype.updatePowerStateCharacteristic = function(deviceId, state) {
     platform.log("Updating recorded Characteristic.On for [%s] to [%s]. No request will be sent to the device.", accessory.displayName, isOn);
 
     accessory.getService(Service.Switch)
-        .setCharacteristic(Characteristic.On, isOn);
+        .updateCharacteristic(Characteristic.On, isOn);
 
 }
 
