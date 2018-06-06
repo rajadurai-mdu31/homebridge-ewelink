@@ -7,6 +7,8 @@ The platform will dynamically add/remove devices based on what is configured in 
 
 It has been tested with the [Sonoff basic](http://sonoff.itead.cc/en/products/sonoff/sonoff-basic) relays. I have performed testing with up to two relays associated to my account.
 
+It has been tested with the [Sonoff T1](http://sonoff.itead.cc/en/products/residential/sonoff-t1) relays.
+
 The plugin will only support one eWeLink account.
 
 It is possible to continute to use the OEM functionality (eWeLink app, Google Home integration); this plugin requires no modification to the relay's firmware.
@@ -14,6 +16,8 @@ It is possible to continute to use the OEM functionality (eWeLink app, Google Ho
 ## Shortcomings
 
 The plugin uses the same credentials as the eWeLink app. In order to obtain the authenticationToken, you'll need to use Charles to inspect the traffic and grab the value from the Authorization header. See below for information on how to obtain this value.
+
+The Outlet Names for the Sonoff T1 or quivalent will not be used. It would be named as Name_<outletNumber>
 
 Also, the code is of suboptimal quality. It was a quick-and-dirty plugin; feel free to contribute & improve.
 
